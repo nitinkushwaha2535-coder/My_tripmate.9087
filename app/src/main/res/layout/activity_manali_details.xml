@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F7F8FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HERO IMAGE -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/santorini"
+                android:contentDescription="Manali" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#35000000" />
+
+            <!-- BACK BUTTON -->
+            <TextView
+                android:id="@+id/manaliBack"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_margin="18dp"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:background="@drawable/bg_destination_hero" />
+
+            <!-- TITLE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manali"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="⌖ Himachal Pradesh, India"
+                    android:textColor="#F1F8F5"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <!-- CONTENT CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:background="@drawable/bg_login_card">
+
+            <!-- RATING -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="★★★★★"
+                    android:textColor="#F4B740"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="4.8  (2.4k reviews)"
+                    android:textColor="#718096"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="About Manali"
+                android:textColor="#172033"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Manali is a beautiful mountain destination surrounded by snow-covered peaks, green valleys and peaceful rivers. It is perfect for adventure, nature and relaxing getaways."
+                android:textColor="#667085"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp" />
+
+
+            <!-- TAGS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:gravity="center"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:text="Mountains"
+                    android:textColor="#087F5B"
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_destination_tag" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:text="Snow"
+                    android:textColor="#087F5B"
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_destination_tag" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:text="Adventure"
+                    android:textColor="#087F5B"
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_destination_tag" />
+
+            </LinearLayout>
+
+
+            <!-- QUICK INFO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Trip Information"
+                android:textColor="#172033"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="☀&#10;Best Time&#10;Oct – Jun"
+                    android:textColor="#52615B"
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_service_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="₹&#10;Budget&#10;₹₹"
+                    android:textColor="#52615B"
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_service_icon" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="☷&#10;Ideal Stay&#10;4–5 Days"
+                    android:textColor="#52615B"
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_service_icon" />
+
+            </LinearLayout>
+
+
+            <!-- PLACES -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Places to Visit"
+                android:textColor="#172033"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Solang Valley&#10;• Rohtang Pass&#10;• Hadimba Temple&#10;• Mall Road"
+                android:textColor="#667085"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp" />
+
+
+            <!-- BUTTONS -->
+            <Button
+                android:id="@+id/addManaliTrip"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/bg_login_button"
+                android:backgroundTint="#0CAA78"
+                android:text="Add to My Trip"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bookManali"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_google_button"
+                android:text="Book Now"
+                android:textAllCaps="false"
+                android:textColor="#087F5B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

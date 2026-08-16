@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC">
+
+    <!-- SCROLLABLE PROFILE CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="78dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp">
+
+            <!-- TOP BAR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="#172033"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- PROFILE CARD -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp"
+                android:paddingTop="28dp"
+                android:paddingBottom="28dp"
+                android:background="@drawable/bg_profile_card"
+                android:elevation="3dp">
+
+                <!-- PROFILE PHOTO -->
+
+                <ImageView
+                    android:id="@+id/profilePhoto"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:contentDescription="Profile photo" />
+
+                <!-- NAME -->
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Arjun Sharma"
+                    android:textColor="#172033"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <!-- BADGE -->
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Gold Explorer"
+                    android:textColor="#52615B"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_profile_badge" />
+
+
+                <!-- STATS -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:orientation="horizontal">
+
+                    <!-- TRIPS -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_profile_stat">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12"
+                            android:textColor="#087F5B"
+                            android:textSize="34sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Trips"
+                            android:textColor="#52615B"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                    <!-- CITIES -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_profile_stat">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="45"
+                            android:textColor="#087F5B"
+                            android:textSize="34sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Cities"
+                            android:textColor="#52615B"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- EDIT PROFILE -->
+
+                <Button
+                    android:id="@+id/editProfileButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Edit Profile"
+                    android:textAllCaps="false"
+                    android:textColor="#087F5B"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#E8F0FF"
+                    android:minHeight="0dp" />
+
+            </LinearLayout>
+
+
+            <!-- ACCOUNT MENU -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_profile_menu"
+                android:elevation="2dp">
+
+
+                <!-- MY BOOKINGS -->
+
+                <LinearLayout
+                    android:id="@+id/myBookings"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp">
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:text="▣"
+                        android:textColor="#087F5B"
+                        android:textSize="25sp"
+                        android:background="@drawable/bg_profile_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Bookings"
+                            android:textColor="#172033"
+                            android:textSize="19sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Manage upcoming and past trips"
+                            android:textColor="#66736E"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="›"
+                        android:textColor="#7B8781"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+
+                <!-- DIVIDER -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCE4EA" />
+
+
+                <!-- SAVED DESTINATIONS -->
+
+                <LinearLayout
+                    android:id="@+id/savedDestinations"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp">
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:text="♡"
+                        android:textColor="#087F5B"
+                        android:textSize="32sp"
+                        android:background="@drawable/bg_profile_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Saved Destinations"
+                            android:textColor="#172033"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Places you want to visit"
+                            android:textColor="#66736E"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="›"
+                        android:textColor="#7B8781"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+
+                <!-- DIVIDER -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCE4EA" />
+
+
+                <!-- PAYMENT -->
+
+                <LinearLayout
+                    android:id="@+id/paymentMethods"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp">
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:text="▣"
+                        android:textColor="#087F5B"
+                        android:textSize="25sp"
+                        android:background="@drawable/bg_profile_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Methods"
+                            android:textColor="#172033"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Cards and wallets"
+                            android:textColor="#66736E"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="›"
+                        android:textColor="#7B8781"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- PREFERENCES & SUPPORT -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="48dp"
+                android:text="Preferences &amp; Support"
+                android:textColor="#52615B"
+                android:textSize="19sp" />
+
+
+            <!-- SUPPORT MENU -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_profile_menu"
+                android:elevation="2dp">
+
+
+                <!-- SETTINGS -->
+
+                <LinearLayout
+                    android:id="@+id/settingsOption"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp">
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:text="⚙"
+                        android:textColor="#087F5B"
+                        android:textSize="28sp"
+                        android:background="@drawable/bg_profile_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Settings"
+                            android:textColor="#172033"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Notifications, privacy, and security"
+                            android:textColor="#66736E"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="›"
+                        android:textColor="#7B8781"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+
+                <!-- DIVIDER -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCE4EA" />
+
+
+                <!-- HELP -->
+
+                <LinearLayout
+                    android:id="@+id/helpSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp">
+
+                    <TextView
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:gravity="center"
+                        android:text="?"
+                        android:textColor="#087F5B"
+                        android:textSize="30sp"
+                        android:background="@drawable/bg_profile_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Help &amp; Support"
+                            android:textColor="#172033"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="FAQs and customer service"
+                            android:textColor="#66736E"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:text="›"
+                        android:textColor="#7B8781"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- LOG OUT -->
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="24dp"
+                android:text="⇥  Log Out"
+                android:textAllCaps="false"
+                android:textColor="#A51420"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#FFD7D4"
+                android:minHeight="0dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- FIXED BOTTOM NAVIGATION -->
+
+    <LinearLayout
+        android:id="@+id/profileBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="10dp">
+
+        <!-- HOME -->
+
+        <LinearLayout
+            android:id="@+id/profileNavHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="⌂"
+                android:textColor="#52615B"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#52615B"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <!-- TRIPS -->
+
+        <LinearLayout
+            android:id="@+id/profileNavTrips"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="◉"
+                android:textColor="#52615B"
+                android:textSize="21sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trips"
+                android:textColor="#52615B"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <!-- DESTINATIONS -->
+
+        <LinearLayout
+            android:id="@+id/profileNavDestinations"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="▣"
+                android:textColor="#52615B"
+                android:textSize="21sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destinations"
+                android:textColor="#52615B"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <!-- PROFILE SELECTED -->
+
+        <LinearLayout
+            android:id="@+id/profileNavProfile"
+            android:layout_width="76dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_profile_selected">
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="♙"
+                android:textColor="#267A66"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="#397968"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
